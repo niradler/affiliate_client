@@ -6,8 +6,8 @@
 
     </div>
     <div class="navbar-item">
-        <input class="input"/> &nbsp;
-        <button class="button is-link">Search</button>
+        <input #asin name="asin" class="input" type="text"/> &nbsp;
+        <button class="button is-link" (click)="search(asin.value)">Search</button>
       </div>
   </nav>
 
