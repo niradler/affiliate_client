@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ProductsComponent implements OnInit {
 
   constructor(private router:Router,private productService:ProductService,private route: ActivatedRoute) {}
-  product = {}
+  product:any = {}
   asin: string;
   private sub: any;
   getProduct(asin) {
@@ -23,7 +23,9 @@ export class ProductsComponent implements OnInit {
   notfound() {
     this.router.navigate(['/not-found',]);
   }
-
+  setImage(url){
+    this.product.large_image = url;
+  }
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.asin = params['asin']; // (+) converts string 'id' to a number

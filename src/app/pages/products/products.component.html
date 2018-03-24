@@ -3,6 +3,9 @@
     <div class="columns">
         <div class="column">
          <img src={{product.large_image}}/>
+         <div>
+            <img *ngFor="let i of product.images" src={{i.thumbnailImage}} (click)="setImage(i.largeImage)" class="clickable"/>
+         </div>
         </div>
         <div class="column">
             <div class="content">
