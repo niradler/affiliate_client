@@ -1,3 +1,17 @@
 .clickable:hover{
   cursor: pointer;
 }
+
+.banner-3 {
+  background-image: url("https://m.media-amazon.com/images/G/01/AMAZON_FASHION/2018/EDITORIAL/SPRING_2/GATEWAY/DESKTOP/HERO_M_xGL_SpringStockUp_1x._CB502042831_.jpg");
+
+}
+.banner {
+  background-repeat: no-repeat, repeat;
+  background-color:black;
+  height: 300px;
+}
+
+.delete-text{
+  text-decoration: line-through;
+}
